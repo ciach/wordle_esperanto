@@ -32,5 +32,6 @@ if __name__ == "__main__":
                     console.print(guess[item], end=" ", style="yellow")
                 else:
                     print("_", end=" ")
+            print("\n")
 
     print(f"\nYou lose! The word was {word_to_guess}")
