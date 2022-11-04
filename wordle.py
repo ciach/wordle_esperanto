@@ -17,7 +17,7 @@ if __name__ == "__main__":
     print(f"\n debugging: {word_to_guess} \n")
 
     for _ in range(6):
-        guess = input("Guess a word: ")
+        guess = input("Guess a word: ").upper()
         if len(guess) != len(word_to_guess):
             print("Wrong length")
         if guess == word_to_guess:
