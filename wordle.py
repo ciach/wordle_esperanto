@@ -16,13 +16,15 @@ if __name__ == "__main__":
     word_to_guess = read_random_word("czap-6.txt")
     print(f"\n debugging: {word_to_guess} \n")
 
-    for _ in range(6):
+    for _ in range(6)e
         guess = input("Guess a word: ").upper()
         if len(guess) != len(word_to_guess):
-            print("Wrong length")
+            console.print(
+                f"Wrong length! :loudly_crying_face: Your guess should be {len(word_to_guess)} letters long!"
+            )
             continue
         if guess == word_to_guess:
-            print("You win!")
+            console.print(":thumbs_up: You win!")
             sys.exit(0)
         if len(guess) == len(word_to_guess):
             for item, letter in enumerate(guess):
@@ -34,4 +36,4 @@ if __name__ == "__main__":
                     print("_", end=" ")
             print("\n")
 
-    print(f"\nYou lose! The word was {word_to_guess}")
+    console.print(f"\nYou lose! :thumbs_down: The word was {word_to_guess}")
