@@ -16,11 +16,12 @@ if __name__ == "__main__":
     word_to_guess = read_random_word("czap-6.txt")
     print(f"\n debugging: {word_to_guess} \n")
 
-    for _ in range(6)e
+    for _ in range(6):
         guess = input("Guess a word: ").upper()
         if len(guess) != len(word_to_guess):
             console.print(
-                f"Wrong length! :loudly_crying_face: Your guess should be {len(word_to_guess)} letters long!"
+                f"Wrong length! :loudly_crying_face: Your guess \
+                should be {len(word_to_guess)} letters long!"
             )
             continue
         if guess == word_to_guess:
